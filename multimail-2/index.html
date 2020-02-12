@@ -1,0 +1,3166 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+	<!--[if !mso]><!-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<!--<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet" />
+	<title>Developer</title>
+	<link rel="stylesheet" href="main.css">
+
+	<style>
+		body {
+			margin: 0;
+			leftmargin: 0;
+			topmargin: 0;
+			padding: 0;
+			background-color: #717C87;
+			font-family: 'Open Sans',
+				sans-serif;
+			font-weight: 400;
+		}
+
+		table {
+			border-collapse: collapse;
+		}
+
+		img,
+		a img {
+			border: 0;
+			outline: none;
+			text-decoration: none;
+		}
+
+		img {
+			-ms-interpolation-mode: bicubic;
+		}
+
+		table {
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+		}
+
+		a[href^=tel],
+		a[href^=sms] {
+			color: inherit;
+			cursor: default;
+			text-decoration: none;
+		}
+
+		p,
+		a,
+		li,
+		td,
+		body,
+		table,
+		blockquote {
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		p {
+			display: block;
+			margin: 0;
+			padding: 0;
+		}
+
+		a[x-apple-data-detectors] {
+			color: inherit !important;
+			text-decoration: none !important;
+			font-size: inherit !important;
+			font-family: inherit !important;
+			font-weight: inherit !important;
+			line-height: inherit !important;
+		}
+
+		a {
+			text-decoration: none;
+			display: inline-block;
+		}
+
+		img {
+			max-width: 600px !important;
+			display: block;
+		}
+
+		.hideMSO {
+			mso-hide: all;
+		}
+
+		.hideDesktop {
+			display: none;
+			width: 0;
+			height: 0;
+			visibility: hidden;
+		}
+
+		@media only screen and (max-width: 400px) {
+			.hideDesktop {
+				display: block;
+				width: auto;
+				height: auto;
+				visibility: visible;
+			}
+		}
+
+		.hideMobile {
+			display: block;
+			width: auto;
+			height: auto;
+			visibility: visible;
+		}
+
+		@media only screen and (max-width: 400px) {
+			.hideMobile {
+				display: none;
+				width: 0;
+				height: 0;
+				visibility: hidden;
+			}
+		}
+
+		.c-white {
+			color: #ffffff;
+		}
+
+		.c-black {
+			color: #000000;
+		}
+
+		.c-yellow {
+			color: #FF900E;
+		}
+
+		.c-light {
+			color: #222222;
+		}
+
+		.c-light-2 {
+			color: #888888;
+		}
+
+		.b-yellow {
+			background-color: #FF900E;
+		}
+
+		.w-100 {
+			width: 100%;
+		}
+
+		.h-100 {
+			height: 100%;
+		}
+
+		.rs-ib {
+			display: inline-block;
+		}
+
+		.ib {
+			display: inline-block;
+		}
+
+		.t-center {
+			text-align: center !important;
+		}
+
+		.t-left {
+			text-align: left !important;
+		}
+
+		.t-justify {
+			text-align: justify !important;
+		}
+
+		.t-left-rs {
+			text-align: left !important;
+		}
+
+		@media only screen and (max-width: 400px) {
+			.t-left-rs {
+				text-align: center !important;
+			}
+		}
+
+		.t-right {
+			text-align: right !important;
+		}
+
+		.t-right-rs {
+			text-align: right !important;
+		}
+
+		@media only screen and (max-width: 400px) {
+			.t-right-rs {
+				text-align: center !important;
+			}
+		}
+
+		.b-r-10 {
+			border-radius: 10px !important;
+		}
+
+		.b-r-5 {
+			border-radius: 5px !important;
+		}
+
+		.b-r-3 {
+			border-radius: 3px !important;
+		}
+
+		.v-a-top {
+			vertical-align: top !important;
+		}
+
+		.v-a-middle {
+			vertical-align: middle !important;
+		}
+
+		.v-a-bottom {
+			vertical-align: bottom !important;
+		}
+
+		.t-cap {
+			text-transform: capitalize;
+		}
+
+		.t-up {
+			text-transform: uppercase;
+		}
+
+		.l-h-50 {
+			line-height: 50px;
+		}
+
+		.l-h-26 {
+			line-height: 26px;
+		}
+
+		.l-h-1 {
+			line-height: 1;
+		}
+
+		.bold {
+			font-weight: bold;
+		}
+
+		.f-30 {
+			font-size: 30px;
+		}
+
+		.f-29 {
+			font-size: 29px;
+		}
+
+		.f-28 {
+			font-size: 28px;
+		}
+
+		.f-27 {
+			font-size: 27px;
+		}
+
+		.f-26 {
+			font-size: 26px;
+		}
+
+		.f-25 {
+			font-size: 25px;
+		}
+
+		.f-25 {
+			font-size: 25px;
+		}
+
+		.f-24 {
+			font-size: 24px;
+		}
+
+		.f-23 {
+			font-size: 23px;
+		}
+
+		.f-22 {
+			font-size: 22px;
+		}
+
+		.f-21 {
+			font-size: 21px;
+		}
+
+		.f-20 {
+			font-size: 20px;
+		}
+
+		.f-19 {
+			font-size: 19px;
+		}
+
+		.f-18 {
+			font-size: 18px;
+		}
+
+		.f-17 {
+			font-size: 17px;
+		}
+
+		.f-16 {
+			font-size: 16px;
+		}
+
+		.f-15 {
+			font-size: 15px;
+		}
+
+		.f-14 {
+			font-size: 14px;
+		}
+
+		.f-13 {
+			font-size: 13px;
+		}
+
+		.f-12 {
+			font-size: 12px;
+		}
+
+		.f-1 {
+			font-size: 1px;
+		}
+
+		.f-0 {
+			font-size: 0px;
+		}
+
+		.btn {
+			width: 150px;
+			height: 50px;
+			border-radius: 5px;
+			font-size: 16px;
+		}
+
+		.btn a {
+			color: #ffffff;
+			font-size: 16px;
+			text-transform: uppercase;
+		}
+
+		@media only screen and (max-width: 400px) {
+			.rs-ib {
+				display: table !important;
+				width: 100% !important;
+			}
+
+			.rs-img {
+				display: block !important;
+				width: 100% !important;
+			}
+		}
+
+		@media only screen and (max-width: 400px) {
+			.rs-w-95 {
+				display: table !important;
+				width: 95% !important;
+			}
+		}
+
+		/*# sourceMappingURL=main.css.map */
+	</style>
+
+</head>
+
+<body>
+
+	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+		<tr>
+			<td align="center">
+				<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td width="800" align="center">
+							<table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+
+								<!-- >>>>>>>>>>>> TOP LINK <<<<<<<<<<<<<< -->
+								<tr>
+									<td bgcolor="#FF900E" align="center">
+										<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td style="height: 20px;" colspan="1" height="20"></td>
+											</tr>
+											<tr>
+												<td align="center" class="f-0">
+													<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td height="25" width="200" class="t-left-rs">
+																<a href="#link" class="f-16 c-white">
+																	view online
+																</a>
+															</td>
+														</tr>
+													</table>
+													<!--[if (gte mso 9)|(IE)]>
+																	        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																					<![endif]-->
+													<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td width="400" align="center" class="t-right-rs">
+																<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td width="30" align="center">
+																			<a href="#link">
+																				<img
+																					src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/6a81db14-18ab-4e87-a94d-d4d9429ca105.png"
+																					alt="">
+																			</a>
+																		</td>
+																		<td width="30" align="center">
+																			<a href="#link">
+																				<img
+																					src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/9c8c512e-d06f-45e2-887c-1b61694cc508.png"
+																					alt="">
+																			</a>
+																		</td>
+																		<td width="30" align="center">
+																			<a href="#link">
+																				<img
+																					src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/cd9c91c9-5583-40e9-b3f0-26e5416c65dd.png"
+																					alt="">
+																			</a>
+																		</td>
+																		<td width="30" align="center">
+																			<a href="#link">
+																				<img
+																					src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/af2f6e68-cb34-4a2b-9c6f-dc7a8596c7f7.png"
+																					alt="">
+																			</a>
+																		</td>
+																		<td width="30" align="center">
+																			<a href="#link">
+																				<img
+																					src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/81b2af30-1b10-4026-be31-7f96edff0795.png"
+																					alt="">
+																			</a>
+																		</td>
+																		<td width="30" align="center">
+																			<a href="#link">
+																				<img
+																					src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/e2b3d20c-6694-4634-8751-7f459e0b281d.png"
+																					alt="">
+																			</a>
+																		</td>
+																		<td width="30" align="center">
+																			<a href="#link">
+																				<img
+																					src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/7ef401f6-733b-4cba-a9e5-cb6ef120f6e5.png"
+																					alt="">
+																			</a>
+																		</td>
+																		<td width="30" align="center">
+																			<a href="#link">
+																				<img
+																					src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/135a9d96-8168-4990-8fdd-12f35524c8c9.png"
+																					alt="">
+																			</a>
+																		</td>
+																		<td width="30" align="center">
+																			<a href="#link">
+																				<img
+																					src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/f25f125e-5381-4dbd-bb27-dd3376d25e1c.png"
+																					alt="">
+																			</a>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td style="height: 20px;" colspan="1" height="20"></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<!-- >>>>>>>>>>>> TOP LINK END <<<<<<<<<<<<<< -->
+
+								<!-- >>>>>>>>>>>> HEADER <<<<<<<<<<< -->
+								<tr>
+									<td bgcolor="#FFFFFF" align="center">
+										<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td style="height: 20px;" colspan="1" height="20"></td>
+											</tr>
+											<tr>
+												<td align="center" class="f-0">
+													<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td width="300" height="22" class="t-left-rs">
+																<a href="#link">
+																	<img
+																		src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/be78e3e3-537c-417b-b189-ac3af58f0696.png"
+																		alt="">
+																</a>
+															</td>
+														</tr>
+													</table>
+
+													<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td class="hideDesktop hideMSO" style="height: 10px;" colspan="1" height="10"></td>
+														</tr>
+													</table>
+													<!--[if (gte mso 9)|(IE)]>
+	        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+					<![endif]-->
+													<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td width="300" class="t-right-rs">
+																<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td align="center" class="c-light f-16">&nbsp; Home &nbsp;</td>
+																		<td align="center" class="c-light f-16">&nbsp; About &nbsp;</td>
+																		<td align="center" class="c-light f-16">&nbsp; Service &nbsp;</td>
+																		<td align="center" class="c-light f-16">&nbsp; Contact &nbsp;</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td style="height: 20px;" colspan="1" height="20"></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<!-- >>>>>>>>>>>>>>>>> HEADER END <<<<<<<<<<<< -->
+
+								<!-- >>>>>>>>>>>> SLOGAN <<<<<<<<<<<<<<<< -->
+								<tr>
+									<td align="center" style="overflow: hidden;">
+
+										<!-- Start Background Image Table -->
+										<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+											<tbody>
+												<tr>
+													<td height="545" align="center"
+														style="background-image: url('https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/aa2a8a0d-a828-450e-a64d-af24921eedda.jpg');">
+														<!--[if gte mso 9]>
+											                                                <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:800px">
+											                                                <v:fill type="frame" src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/aa2a8a0d-a828-450e-a64d-af24921eedda.jpg" color="#ffffff" />
+											                                                <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+											                                                <div style="font-size:1px;line-height:1px">
+											                                                <table width="800" cellspacing="0" cellpadding="0" border="0" align="center">
+											                                                <tbody>
+											                                                <tr>
+											                                                <td height="545" align="center">
+											                                                <![endif]-->
+
+														<table class="rs-ib rs-w-95" cellpadding="0" cellspacing="0" align="center" border="0">
+
+
+
+															<tr>
+																<td width="600" align="center">
+																	<a href="#link">
+																		<img
+																			src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/414a43ac-d83f-4161-bf88-3816ca935dbb.png"
+																			alt="">
+																	</a>
+																</td>
+															</tr>
+															<tr>
+																<td style="height: 10px;" colspan="1" height="10"></td>
+															</tr>
+															<tr>
+																<td width="600" class="c-light" align="center" style="font-size: 30px">
+																	Powerful <span style="font-weight: bold;color: #000000;">Multi-purpose</span> <span
+																		style="font-weight: bold;color: #FF900E;">Email</span>
+																</td>
+															</tr>
+															<tr>
+																<td style="height: 10px;" colspan="1" height="10"></td>
+															</tr>
+															<tr>
+																<td width="600" align="center" class="c-light" style="font-weight: bold;">
+																	SUCCESS YOUR BUSINESS
+																</td>
+															</tr>
+															<tr>
+																<td style="height: 10px;" colspan="1" height="10"></td>
+															</tr>
+															<tr>
+																<td width="600" align="center">
+																	<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																		<tr>
+																			<td bgcolor="#FF900E" class="c-white" width="150" height="50" align="center"
+																				style="width: 170px;height: 50px;border-radius: 5px;">GET MORE</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+															<tr>
+																<td style="height: 20px;" colspan="1" height="20"></td>
+															</tr>
+															<tr>
+																<td width="600" align="center">
+																	<a href="#link">
+																		<img width="100%" style="width: 100%;"
+																			src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/600a6474-3718-423c-8e6d-879c73e9e7e0.png"
+																			alt="">
+																	</a>
+																</td>
+															</tr>
+
+
+
+
+														</table>
+
+														<!--[if gte mso 9]>
+											                                                </td>
+											                                                </tr>
+											                                                </tbody>
+											                                                </table>
+											                                                </div>
+											                                                </v:textbox>
+											                                                </v:rect>
+											                                                <![endif]-->
+
+													</td>
+												</tr>
+											</tbody>
+										</table>
+										<!-- End Background Image Table -->
+
+									</td>
+								</tr>
+								<!-- >>>>>>>>>>>>>> SLOGAN END <<<<<<<<<<<<<< -->
+
+								<!-- >>>>>>>>>>> TRIAL <<<<<<<<<<<<<< -->
+								<tr>
+									<td bgcolor="#FFFFFF" align="center">
+										<table width="100%" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td style="height: 50px;" colspan="1" height="50"></td>
+											</tr>
+											<tr>
+												<td align="center" class="f-0">
+													<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td align="center" class="f-0">
+																<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td width="370" align="center">
+																			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td width="30" class="t-left v-a-top">
+																						<img
+																							src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/77fad03a-99fc-4dcc-bf52-09c81d055859.png"
+																							alt="">
+																					</td>
+																					<td width="20" align="center" colspan="1"></td>
+																					<td class="t-left-rs">
+																						<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td class="f-20 t-left-rs bold c-light-2">
+																									Get Free <span style="color: #FF900E;">Email Template</span> Trial
+																								</td>
+																							</tr>
+																							<tr>
+																								<td class="f-17 t-left-rs c-light">
+																									Grow your business
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+																<!--[if (gte mso 9)|(IE)]>
+																		        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																						<![endif]-->
+																<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td width="50" align="center" height="20" colspan="1"></td>
+																	</tr>
+																</table>
+																<!--[if (gte mso 9)|(IE)]>
+																		        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																						<![endif]-->
+																<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td width="170" align="center">
+																			<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td width="130" height="40" align="center" class="f-17"
+																						style="border: 3px solid #FF900E;color: #FF900E;">
+																						DOWNLOAD
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td style="height: 30px;" colspan="1" height="30"></td>
+											</tr>
+										</table>
+										<table width="100%" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td align="center">
+													<img width="100%" class="w-100"
+														src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/44d16164-74b4-46b0-9846-a6f50097f83f.png"
+														alt="">
+												</td>
+											</tr>
+											<tr>
+												<td style="height: 50px;" colspan="1" height="50"></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<!-- >>>>>>>>>>>> TRIAL END <<<<<<<<<<<< -->
+
+
+								<!-- >>>>>>>>>>>>  FEATURE <<<<<<<<<<<< -->
+								<tr>
+									<td bgcolor="#FFFFFF" align="center">
+										<!-- title -->
+										<table width="100%" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td style="height: 50px;" colspan="1" height="10"></td>
+											</tr>
+											<tr>
+												<td align="center">
+													<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td width="185" align="center" class="c-light" style="font-size: 30px;">
+																Awesome Many Features
+															</td>
+														</tr>
+														<tr>
+															<td style="height: 10px;" colspan="1" height="10"></td>
+														</tr>
+														<tr>
+															<td width="600" align="center" class="l-h-1">
+																<table class="ib" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td width="40" height="5" bgcolor="#FF900E" align="center"
+																			style="width: 40px;height: 5px;">
+																		</td>
+																		<td width="20" height="5" align="center" style="width: 20px;"></td>
+																		<td width="40" height="5" bgcolor="#FF900E" align="center"
+																			style="width: 40px;height: 5px;">
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td style="height: 20px;" colspan="1" height="20"></td>
+											</tr>
+										</table>
+										<!-- title end -->
+										<!-- 3 box -->
+										<table width="100%" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td align="center">
+													<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td align="center" class="f-0">
+																<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td width="185" align="center" style="border: 1px solid #cccccc;">
+																			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td style="height: 10px;" colspan="1" height="10"></td>
+																				</tr>
+																				<tr>
+																					<td align="center">
+																						<img
+																							src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/e64a05d3-e31e-4a3a-8c8b-009fe7650538.png"
+																							alt="">
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="height: 10px;" colspan="1" height="10"></td>
+																				</tr>
+																				<tr>
+																					<td align="center" class="f-20 c-light-2 bold">
+																						Drag & Drop
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="height: 20px;" colspan="1" height="20"></td>
+																				</tr>
+																				<tr>
+																					<td align="center" class="f-15 c-light l-h-26">
+																						Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, aliquam!
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="height: 10px;" colspan="1" height="10"></td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+																<!--[if (gte mso 9)|(IE)]>
+																        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																				<![endif]-->
+																<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td width="20" align="center" style="width: 20px;height: 10px;" height="10"></td>
+																	</tr>
+																</table>
+																<!--[if (gte mso 9)|(IE)]>
+																        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																				<![endif]-->
+																<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td width="185" align="center" style="border: 1px solid #cccccc;">
+																			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td style="height: 10px;" colspan="1" height="10"></td>
+																				</tr>
+																				<tr>
+																					<td align="center">
+																						<img
+																							src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/37c762ee-f8d8-42b1-9555-b2d485685f36.png"
+																							alt="">
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="height: 10px;" colspan="1" height="10"></td>
+																				</tr>
+																				<tr>
+																					<td align="center" class="f-20 c-light-2 bold">
+																						Responsive
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="height: 20px;" colspan="1" height="20"></td>
+																				</tr>
+																				<tr>
+																					<td align="center" class="f-15 c-light l-h-26">
+																						Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, aliquam!
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="height: 10px;" colspan="1" height="10"></td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+																<!--[if (gte mso 9)|(IE)]>
+																        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																				<![endif]-->
+																<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td width="20" align="center" style="width: 20px;height: 10px;" height="10"></td>
+																	</tr>
+																</table>
+																<!--[if (gte mso 9)|(IE)]>
+																        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																				<![endif]-->
+																<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td width="185" align="center" style="border: 1px solid #cccccc;">
+																			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td style="height: 10px;" colspan="1" height="10"></td>
+																				</tr>
+																				<tr>
+																					<td align="center">
+																						<img
+																							src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/2ae54944-4318-4590-95e2-3ef2e4f288cb.png"
+																							alt="">
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="height: 10px;" colspan="1" height="10"></td>
+																				</tr>
+																				<tr>
+																					<td align="center" class="f-20 c-light-2 bold">
+																						New & Template
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="height: 20px;" colspan="1" height="20"></td>
+																				</tr>
+																				<tr>
+																					<td align="center" class="f-15 c-light l-h-26">
+																						Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, aliquam!
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="height: 10px;" colspan="1" height="10"></td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+										<!-- 3 box end -->
+										<!-- info + button -->
+										<table width="100%" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td style="height: 30px;" colspan="1" height="30"></td>
+											</tr>
+											<tr>
+												<td align="center">
+													<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td width="600" align="center" class="f-16 l-h-26">
+																Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta velit eaque facere
+																dolorum, praesentium atque dolores! Perspiciatis animi commodi quis.
+															</td>
+														</tr>
+														<tr>
+															<td width="600" align="center" height="20" style="height: 20px; width: 600px;">
+															</td>
+														</tr>
+														<tr>
+															<td width="600" align="center" class="l-h-1">
+																<table class="ib" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td width="200" height="45" align="center" bgcolor="#FF900E" class="b-r">
+																			<a href="#link" class="f-15 bold c-white">MORE FEATURES</a>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td style="height: 50px;" colspan="1" height="50"></td>
+											</tr>
+										</table>
+										<!-- info + button end -->
+									</td>
+								</tr>
+								<!-- >>>>>>>>>>>>  FEATURE END -->
+
+
+								<!-- >>>>>>>>>>>>  QUALITY <<<<<<<<<<<< -->
+								<tr>
+									<td align="center" bgcolor="#F4F6F7">
+										<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td style="height: 50px;" colspan="1" height="50"></td>
+											</tr>
+
+											<tr>
+												<td align="center" class="f-0">
+													<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td width="290" class="t-left-rs">
+																<a href="#link">
+																	<img
+																		src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/410f5b69-e5a9-4a7f-81de-ce9a6f5c87c4.png"
+																		alt="">
+																</a>
+															</td>
+														</tr>
+													</table>
+													<!--[if (gte mso 9)|(IE)]>
+														        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																		<![endif]-->
+													<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td width="20" align="center"></td>
+														</tr>
+													</table>
+													<!--[if (gte mso 9)|(IE)]>
+															        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																			<![endif]-->
+													<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+
+															<td width="290" height="310" align="center" class="v-a-middle" style="height: 310px;">
+
+																<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td class="t-left-rs c-light-2" style="font-size: 25px;">
+																			Product Quality
+																		</td>
+																	</tr>
+																	<tr>
+																		<td style="height: 5px;" colspan="1" height="5"></td>
+																	</tr>
+																	<tr>
+																		<td class="t-left-rs">
+																			<table class="ib" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td width="30" height="5" align="center" bgcolor="#FF900E"></td>
+																					<td width="10" height="5" align="center" bgcolor=""></td>
+																					<td width="30" height="5" align="center" bgcolor="#FF900E"></td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td style="height: 10px;" colspan="1" height="10">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="t-left-rs f-15 l-h-26">
+																			Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, ducimus.
+																		</td>
+																	</tr>
+																	<tr>
+																		<td style="height: 15px;" colspan="1" height="15">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="t-left-rs">
+																			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td align="center">
+																						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td align="center" width="15">
+																									<img
+																										src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/ca529deb-a21f-4b86-8ab6-09f215eb95a4.png"
+																										alt="">
+																								</td>
+																								<td align="center" width="10" height="5"
+																									style="height: 5px;width: 10px;">
+																								</td>
+																								<td class="f-15 bold c-light-2">
+																									Customizable
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+
+																				<tr>
+																					<td style="height: 10px;" colspan="1" height="10"></td>
+																				</tr>
+
+																				<tr>
+																					<td align="center">
+																						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td align="center" width="15">
+																									<img
+																										src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/ca529deb-a21f-4b86-8ab6-09f215eb95a4.png"
+																										alt="">
+																								</td>
+																								<td align="center" width="10" height="5"
+																									style="height: 5px;width: 10px;">
+																								</td>
+																								<td class="f-15 bold c-light-2">
+																									Responsive
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="height: 10px;" colspan="1" height="10"></td>
+																				</tr>
+
+																				<tr>
+																					<td align="center">
+																						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td align="center" width="15">
+																									<img
+																										src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/ca529deb-a21f-4b86-8ab6-09f215eb95a4.png"
+																										alt="">
+																								</td>
+																								<td align="center" width="10" height="5"
+																									style="height: 5px;width: 10px;">
+																								</td>
+																								<td class="f-15 bold c-light-2">
+																									Compitable
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+
+
+																			</table>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td style="height: 15px;" colspan="1" height="15"></td>
+																	</tr>
+																	<tr>
+																		<td class="t-left-rs">
+																			<table class="ib" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td width="200" height="45" align="center" bgcolor="#FF900E" class="b-r">
+																						<a href="#link" class="f-15 bold c-white">MORE FEATURES</a>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+
+															</td>
+
+														</tr>
+													</table>
+												</td>
+											</tr>
+
+											<tr>
+												<td style="height: 50px;" colspan="1" height="50"></td>
+											</tr>
+
+										</table>
+									</td>
+								</tr>
+								<!-- >>>>>>>>>>>>  QUALITY END <<<<<<<<<<<< -->
+
+								<!-- >>>>>>>>>>>>  OPTIONS <<<<<<<<<<<< -->
+								<tr>
+									<td bgcolor="#FFFFFF" align="center">
+										<!-- space -->
+										<table width="100%" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td style="height: 50px;" colspan="1" height="0"></td>
+											</tr>
+										</table>
+										<!-- space end -->
+
+										<!-- titles -->
+										<table width="100%" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td align="center" class="f-0">
+													<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td align="center" class="f-0">
+																<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td width="400" class="t-left-rs c-light-2" style="font-size: 22px;">
+																			MORE <span style="color: black;">OPTION</span>
+																		</td>
+																	</tr>
+																</table>
+																<!--[if (gte mso 9)|(IE)]> 
+																	        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																					<![endif]-->
+																<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td height="30" width="200" class="f-16 t-right-rs" style="color: #FF900E;">
+																			12-12-2019
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td align="center">
+													<!-- under border -->
+													<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td style="height: 5px;" colspan="1" height="5"></td>
+														</tr>
+														<tr>
+															<td width="600" align="center">
+																<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td width="30" align="center" style="height: 5px;background-color: #FF900E;"></td>
+																		<td width="10" align="center" height="5" style="height: 5px;"></td>
+																		<td width="30" align="center" style="height: 5px;background-color: #FF900E;"></td>
+																		<td width="10" align="center" height="5" style="height: 5px;"></td>
+																		<td align="center" height="5">
+																			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td align="center" height="1" bgcolor="black"></td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+													<!-- under border end -->
+												</td>
+											</tr>
+										</table>
+										<!-- titles end -->
+
+										<!-- space -->
+										<table width="100%" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td style="height: 30px;" colspan="1" height="0"></td>
+											</tr>
+										</table>
+										<!-- space end -->
+
+										<!-- 4 boxes -->
+										<table width="100%" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td align="center">
+													<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+
+														<tr>
+															<td align="center" class="f-0">
+																<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td width="290" align="center">
+																			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td align="center" width="40" class="v-a-top">
+																						<img
+																							src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/2d056d69-4b05-42d6-83e1-635fa40312ef.png"
+																							alt="">
+																					</td>
+																					<td align="center" width="20" height="5" style="height: 5px;"></td>
+																					<td align="center">
+																						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td class="f-22 bold c-light-2 t-left">
+																									Drag & Drop
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="height: 10px;" colspan="1" height="10"></td>
+																							</tr>
+																							<tr>
+																								<td class="f-15 l-h-26 c-light t-left">
+																									Lorem ipsum dolor sit amet consectetur adipisicing.
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+																<!--[if (gte mso 9)|(IE)]>
+																	        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																					<![endif]-->
+																<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td width="20" align="center" height="10" style="height: 10px;"></td>
+																	</tr>
+																</table>
+																<!--[if (gte mso 9)|(IE)]>
+																	        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																					<![endif]-->
+																<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td width="290" align="center">
+																			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td align="center" width="40" class="v-a-top">
+																						<img
+																							src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/858458f6-ed64-45cf-aad2-7a2493f74eca.png"
+																							alt="">
+																					</td>
+																					<td align="center" width="20" height="5" style="height: 5px;"></td>
+																					<td align="center">
+																						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td class="f-22 bold c-light-2 t-left">
+																									Customizable
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="height: 10px;" colspan="1" height="10"></td>
+																							</tr>
+																							<tr>
+																								<td class="f-15 l-h-26 c-light t-left">
+																									Lorem ipsum dolor sit amet consectetur adipisicing.
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+
+														<tr>
+															<td style="height: 30px;" colspan="1" height="30"></td>
+														</tr>
+
+
+														<tr>
+															<td align="center" class="f-0">
+																<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td width="290" align="center">
+																			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td align="center" width="40" class="v-a-top">
+																						<img
+																							src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/dcf82f8c-e663-43be-8068-d1e191f355fb.png"
+																							alt="">
+																					</td>
+																					<td align="center" width="20" height="5" style="height: 5px;"></td>
+																					<td align="center">
+																						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td class="f-22 bold c-light-2 t-left">
+																									Responsive
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="height: 10px;" colspan="1" height="10"></td>
+																							</tr>
+																							<tr>
+																								<td class="f-15 l-h-26 c-light t-left">
+																									Lorem ipsum dolor sit amet consectetur adipisicing.
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+																<!--[if (gte mso 9)|(IE)]>
+																															        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																																			<![endif]-->
+																<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td width="20" align="center" height="10" style="height: 10px;"></td>
+																	</tr>
+																</table>
+																<!--[if (gte mso 9)|(IE)]> 
+																															        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																																			<![endif]-->
+																<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td width="290" align="center">
+																			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td align="center" width="40" class="v-a-top">
+																						<img
+																							src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/5495d9ba-e403-482b-a3bb-e60b53ca2f4b.png"
+																							alt="">
+																					</td>
+																					<td align="center" width="20" height="5" style="height: 5px;"></td>
+																					<td align="center">
+																						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td class="f-22 bold c-light-2 t-left">
+																									Compitable
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="height: 10px;" colspan="1" height="10"></td>
+																							</tr>
+																							<tr>
+																								<td class="f-15 l-h-26 c-light t-left">
+																									Lorem ipsum dolor sit amet consectetur adipisicing.
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+
+													</table>
+												</td>
+											</tr>
+										</table>
+										<!-- 4 boxes end -->
+
+										<!-- space -->
+										<table width="100%" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td style="height: 50px;" colspan="1" height="0"></td>
+											</tr>
+										</table>
+										<!-- space end -->
+									</td>
+								</tr>
+								<!-- >>>>>>>>>>>>  OPTIONS END <<<<<<<<<<<< -->
+
+
+								<!-- >>>>>>>>>>>>  MOBILE <<<<<<<<<<<< -->
+								<tr>
+									<td align="center" bgcolor="#F4F6F7">
+										<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td style="height: 50px;" colspan="1" height="50"></td>
+											</tr>
+
+											<tr>
+												<td dir="rtl" align="center" class="f-0">
+													<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td width="290" class="t-left-rs">
+																<a href="#link">
+																	<img
+																		src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/410f5b69-e5a9-4a7f-81de-ce9a6f5c87c4.png"
+																		alt="">
+																</a>
+															</td>
+														</tr>
+													</table>
+													<!--[if (gte mso 9)|(IE)]>
+															        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																			<![endif]-->
+													<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td width="20" align="center"></td>
+														</tr>
+													</table>
+													<!--[if (gte mso 9)|(IE)]>
+																        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																				<![endif]-->
+													<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+
+															<td dir="ltr" width="290" height="310" align="center" class="v-a-middle"
+																style="height: 310px;">
+
+																<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td class="t-left-rs c-light-2" style="font-size: 25px;">
+																			Responsive Mobile
+																		</td>
+																	</tr>
+																	<tr>
+																		<td style="height: 5px;" colspan="1" height="5"></td>
+																	</tr>
+																	<tr>
+																		<td class="t-left-rs">
+																			<table class="ib" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td width="30" height="5" align="center" bgcolor="#FF900E"></td>
+																					<td width="10" height="5" align="center" bgcolor=""></td>
+																					<td width="30" height="5" align="center" bgcolor="#FF900E"></td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td style="height: 10px;" colspan="1" height="10">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="t-left-rs f-15 l-h-26">
+																			Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, ducimus.
+																		</td>
+																	</tr>
+																	<tr>
+																		<td style="height: 15px;" colspan="1" height="15">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td class="t-left-rs">
+																			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td align="center">
+																						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td align="center" width="15">
+																									<img
+																										src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/ca529deb-a21f-4b86-8ab6-09f215eb95a4.png"
+																										alt="">
+																								</td>
+																								<td align="center" width="10" height="5"
+																									style="height: 5px;width: 10px;">
+																								</td>
+																								<td class="f-15 bold c-light-2">
+																									Customizable
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+
+																				<tr>
+																					<td style="height: 10px;" colspan="1" height="10"></td>
+																				</tr>
+
+																				<tr>
+																					<td align="center">
+																						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td align="center" width="15">
+																									<img
+																										src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/ca529deb-a21f-4b86-8ab6-09f215eb95a4.png"
+																										alt="">
+																								</td>
+																								<td align="center" width="10" height="5"
+																									style="height: 5px;width: 10px;">
+																								</td>
+																								<td class="f-15 bold c-light-2">
+																									Responsive
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="height: 10px;" colspan="1" height="10"></td>
+																				</tr>
+
+																				<tr>
+																					<td align="center">
+																						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td align="center" width="15">
+																									<img
+																										src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/ca529deb-a21f-4b86-8ab6-09f215eb95a4.png"
+																										alt="">
+																								</td>
+																								<td align="center" width="10" height="5"
+																									style="height: 5px;width: 10px;">
+																								</td>
+																								<td class="f-15 bold c-light-2">
+																									Compitable
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+
+
+																			</table>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td style="height: 15px;" colspan="1" height="15"></td>
+																	</tr>
+																	<tr>
+																		<td class="t-left-rs">
+																			<table class="ib" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td width="200" height="45" align="center" bgcolor="#FF900E" class="b-r">
+																						<a href="#link" class="f-15 bold c-white">MORE FEATURES</a>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+
+															</td>
+
+														</tr>
+													</table>
+												</td>
+											</tr>
+
+											<tr>
+												<td style="height: 50px;" colspan="1" height="50"></td>
+											</tr>
+
+										</table>
+									</td>
+								</tr>
+								<!-- >>>>>>>>>>>>  MOBILE END <<<<<<<<<<<< -->
+
+								<!-- >>>>>>>>>>>>  SERVICE <<<<<<<<<<<< -->
+								<tr>
+									<td bgcolor="#FFFFFF" align="center">
+										<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+											<!-- space -->
+											<tr>
+												<td width="600" style="height: 50px;" colspan="1" height="0"></td>
+											</tr>
+											<!-- space end -->
+											<tr>
+												<td width="600" align="center">
+													<table width="100%" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td align="center" class="f-25 bold c-light">
+																Featured Services from MailBuild
+															</td>
+														</tr>
+														<tr>
+															<td style="height: 10px;" colspan="1" height="10"></td>
+														</tr>
+														<tr>
+															<td align="center" class="f-15 c-light l-h-26">
+																Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam officiis, dicta,
+																adipisci laudantium laborum
+																deleniti.
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td width="600" align="center">
+													<!-- 2 box -->
+													<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td style="height: 30px;" colspan="1" height="0"></td>
+														</tr>
+														<tr>
+															<td align="center" class="f-0">
+																<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td width="290" align="center" class="f-16">
+																			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td align="center">
+																						<img class="w-100"
+																							src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/975d4076-706e-498a-8e00-dcb6d7d01afc.jpg"
+																							alt="">
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="height: 10px;" colspan="1" height="10"></td>
+																				</tr>
+																				<tr>
+																					<td align="left" class="f-20 bold c-light">
+																						Send Template via API
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="height: 10px;" colspan="1" height="10"></td>
+																				</tr>
+																				<tr>
+																					<td align="left" class="f-15 c-light l-h-26">
+																						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam officiis,
+																						dicta, adipisci laudantium laborum
+																						deleniti.
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="height: 20px;" colspan="1" height="0"></td>
+																				</tr>
+																				<tr>
+																					<td align="left">
+																						<table class="ib" border="0" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td height="50" width="150" align="center"
+																									class="t-center f-16 b-r-5 t-up b-yellow">
+																									<a class="c-white" href="#link">read
+																										more</a>
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+																<!--[if (gte mso 9)|(IE)]>
+																	        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																					<![endif]-->
+																<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td width="20" align="center" height="20" style="height: 20px;" colspan="1"></td>
+																	</tr>
+																</table>
+																<!--[if (gte mso 9)|(IE)]>
+																	        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																					<![endif]-->
+																<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td width="290" align="center" class="f-16">
+																			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td align="center">
+																						<img class="w-100"
+																							src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/29241806-3ab9-4b28-9599-3504bac29ccd.jpg"
+																							alt="">
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="height: 10px;" colspan="1" height="10"></td>
+																				</tr>
+																				<tr>
+																					<td align="left" class="f-20 bold c-light">
+																						Unlimited Create
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="height: 10px;" colspan="1" height="10"></td>
+																				</tr>
+																				<tr>
+																					<td align="left" class="f-15 c-light l-h-26">
+																						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam officiis,
+																						dicta, adipisci laudantium laborum
+																						deleniti.
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="height: 20px;" colspan="1" height="0"></td>
+																				</tr>
+																				<tr>
+																					<td align="left">
+																						<table class="ib" border="0" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td height="50" width="150" align="center"
+																									class="t-center f-16 b-r-5 t-up b-yellow">
+																									<a class="c-white" href="#link">read
+																										more</a>
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+													<!-- 2 box end -->
+												</td>
+											</tr>
+											<!-- space -->
+											<tr>
+												<td width="600" style="height: 50px;" colspan="1" height="0"></td>
+											</tr>
+											<!-- space end -->
+										</table>
+									</td>
+								</tr>
+								<!-- >>>>>>>>>>>>  SERVICE END <<<<<<<<<<<< -->
+
+								<!-- >>>>>>>>>>>>  TEMPLATE <<<<<<<<<<<< -->
+								<tr>
+									<td bgcolor="#F4F6F7" align="center">
+										<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+											<!-- space -->
+											<tr>
+												<td style="height: 50px;" colspan="1" height="0"></td>
+											</tr>
+											<!-- space end -->
+											<tr>
+												<td width="600" align="center">
+													<table width="100%" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td align="center" class="f-27 c-light bold">
+																Create Awesome Template With 3 Step
+															</td>
+														</tr>
+														<tr>
+															<td align="center" class="f-15 c-light-2 l-h-26">
+																Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam officiis, dicta,
+																adipisci laudantium laborum
+																deleniti.
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td style="height: 30px;" colspan="1" height="30px"></td>
+											</tr>
+											<tr>
+												<td width="600" align="center">
+													<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td align="center" class="f-0">
+																<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td width="185" align="center">
+																			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td>
+																						<a class="w-100" href="#link">
+																							<img class="w-100"
+																								src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/6e8d90a8-37d5-4feb-bf1f-4f76ed30747a.jpg"
+																								alt="">
+																						</a>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="height: 10px;" colspan="1" height="10"></td>
+																				</tr>
+																				<tr>
+																					<td class="f-18 bold c-light">
+																						01 Building
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="height: 10px;" colspan="1" height="10"></td>
+																				</tr>
+																				<tr>
+																					<td class="f-15 c-light-2">
+																						Lorem ipsum dolor sit amet, consectetur.
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="height: 20px;" colspan="1" height="20"></td>
+																				</tr>
+																				<tr>
+																					<td>
+																						<table class="ib" border="0" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td bgcolor="#FF900E" align="center" class="btn">
+																									<a href="#link">read more</a>
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+																<!--[if (gte mso 9)|(IE)]>
+																			        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																							<![endif]-->
+																<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td width="20" align="center" height="10" style="height: 10px;" colspan="1"></td>
+																	</tr>
+																</table>
+																<!--[if (gte mso 9)|(IE)]>
+																	        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																					<![endif]-->
+																<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td width="185" align="center">
+																			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td>
+																						<a class="w-100" href="#link">
+																							<img class="w-100"
+																								src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/eeee7579-1c89-4bb1-b361-bcb310e037a8.jpg"
+																								alt="">
+																						</a>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="height: 10px;" colspan="1" height="10"></td>
+																				</tr>
+																				<tr>
+																					<td class="f-18 bold c-light">
+																						02 Building
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="height: 10px;" colspan="1" height="10"></td>
+																				</tr>
+																				<tr>
+																					<td class="f-15 c-light-2">
+																						Lorem ipsum dolor sit amet, consectetur.
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="height: 20px;" colspan="1" height="20"></td>
+																				</tr>
+																				<tr>
+																					<td>
+																						<table class="ib" border="0" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td bgcolor="#FF900E" align="center" class="btn">
+																									<a href="#link">read more</a>
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+																<!--[if (gte mso 9)|(IE)]>
+																				        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																								<![endif]-->
+																<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td width="20" align="center" height="10" style="height: 10px;" colspan="1"></td>
+																	</tr>
+																</table>
+																<!--[if (gte mso 9)|(IE)]>
+																				        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																								<![endif]-->
+																<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td width="185" align="center">
+																			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td>
+																						<a class="w-100" href="#link">
+																							<img class="w-100"
+																								src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/347bae1e-db9e-42fe-956d-22f6e9a41f28.jpg"
+																								alt="">
+																						</a>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="height: 10px;" colspan="1" height="10"></td>
+																				</tr>
+																				<tr>
+																					<td class="f-18 bold c-light">
+																						03 Building
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="height: 10px;" colspan="1" height="10"></td>
+																				</tr>
+																				<tr>
+																					<td class="f-15 c-light-2">
+																						Lorem ipsum dolor sit amet, consectetur.
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="height: 20px;" colspan="1" height="20"></td>
+																				</tr>
+																				<tr>
+																					<td>
+																						<table class="ib" border="0" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td bgcolor="#FF900E" align="center" class="btn">
+																									<a href="#link">read more</a>
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td style="height: 50px;" colspan="1" height="0"></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<!-- >>>>>>>>>>>>  TEMPLATE END <<<<<<<<<<<< -->
+
+								<!-- >>>>>>>>>>>>  INTRODUCTION <<<<<<<<<<<< -->
+								<tr>
+									<td bgcolor="#FFFFFF" align="center">
+										<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td style="height: 50px;" colspan="1" height="0"></td>
+											</tr>
+											<tr>
+												<td width="600" align="center">
+													<table width="100%" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td>
+																<a href="#link">
+																	<img class="w-100"
+																		src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/2385a613-0b56-414c-a452-85304912bded.jpg"
+																		alt="">
+																</a>
+															</td>
+														</tr>
+														<tr>
+															<td style="height: 10px;" colspan="1" height="10"></td>
+														</tr>
+														<tr>
+															<td class="f-25 c-light bold">
+																Introducing The Email Template
+															</td>
+														</tr>
+														<tr>
+															<td style="height: 10px;" colspan="1" height="10"></td>
+														</tr>
+														<tr>
+															<td class="f-13 c-yellow">
+																By Jonh Doe | 30 junly 2015
+															</td>
+														</tr>
+														<tr>
+															<td style="height: 20px;" colspan="1" height="0"></td>
+														</tr>
+														<tr>
+															<td class="f-15 c-light-2 l-h-26">
+																Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita iusto qui officia
+																iste eligendi ipsam odio adipisci
+																eius alias temporibus!
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td style="height: 50px;" colspan="1" height="0"></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<!-- >>>>>>>>>>>>  INTRODUCTION END <<<<<<<<<<<< -->
+
+								<!-- >>>>>>>>>>>>  PRICE <<<<<<<<<<<< -->
+								<tr>
+									<td bgcolor="#F4F6F7" align="center">
+										<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td style="height: 50px;" colspan="1" height="50"></td>
+											</tr>
+											<tr>
+												<td width="600" align="center">
+													<table width="100%" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td align="center" class="c-light f-30 bold">
+																Pricing Plans
+															</td>
+														</tr>
+														<tr>
+															<td style="height: 20px;" colspan="1" height="20"></td>
+														</tr>
+														<tr>
+															<td align="center" class="f-15 c-light-2 l-h-26">
+																Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam officiis, dicta,
+																adipisci laudantium laborum
+																deleniti.
+															</td>
+														</tr>
+														<tr>
+															<td style="height: 50px;" colspan="1" height="50"></td>
+														</tr>
+														<tr>
+															<td align="center">
+																<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td align="center" class="f-0">
+																			<table class="rs-ib b-r-5" border="0" cellpadding="0" cellspacing="0"
+																				style="border: 1px solid #cccccc;">
+																				<tr>
+																					<td width="183" align="center">
+
+																						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td style="height: 15px;" colspan="1" height="15"></td>
+																							</tr>
+																							<tr>
+																								<td align="center">
+																									<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																										<tr>
+																											<td width="20" align="center">
+																												<img
+																													src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/e62a28b5-7aea-44df-a621-2c555191cf79.png"
+																													alt="">
+																											</td>
+																											<td width="15" height="10" align="center" colspan="1"></td>
+																											<td align="center" class="c-light f-18 bold">
+																												Normal
+																											</td>
+																										</tr>
+																									</table>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="height: 15px;" colspan="1" height="15"></td>
+																							</tr>
+																							<tr>
+																								<td align="center">
+																									<img class="w-100"
+																										src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/73a56a47-1c60-4c8a-8957-41c3c0d1fdc3.jpg"
+																										alt="">
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="height: 15px;" colspan="1" height="15"></td>
+																							</tr>
+																							<tr>
+																								<td align="center">
+																									<table width="90%" border="0" cellpadding="0" cellspacing="0">
+																										<tr>
+																											<td align="center" class="f-15 c-light-2 l-h-26">
+																												Lorem ipsum dolor sit consectetur.
+																											</td>
+																										</tr>
+																									</table>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="height: 15px;" colspan="1" height="15"></td>
+																							</tr>
+																							<tr>
+																								<td bgcolor="#cccccc" align="center" height="1" style="height: 1px;"
+																									colspan="1"></td>
+																							</tr>
+																							<tr>
+																								<td style="height: 20px;" colspan="1" height="0"></td>
+																							</tr>
+																							<tr>
+																								<td align="center" class="c-yellow bold f-30">
+																									$9.99
+																								</td>
+																							</tr>
+																							<tr>
+																								<td align="center" class="c-light-2 t-cap bold f-17">
+																									per month
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="height: 20px;" colspan="1" height="20"></td>
+																							</tr>
+																							<tr>
+																								<td align="center">
+																									<table class="ib" border="0" cellpadding="0" cellspacing="0">
+																										<tr>
+																											<td bgcolor="#FF900E" class="btn" align="center">
+																												<a href="#link">buy now</a>
+																											</td>
+																										</tr>
+																									</table>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="height: 20px;" colspan="1" height="0"></td>
+																							</tr>
+																						</table>
+
+																					</td>
+																				</tr>
+																			</table>
+																			<!--[if (gte mso 9)|(IE)]>
+					        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+									<![endif]-->
+																			<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td width="20" height="20" align="center" colspan="1"></td>
+																				</tr>
+																			</table>
+																			<!--[if (gte mso 9)|(IE)]>
+						        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+										<![endif]-->
+																			<table class="rs-ib b-r-5" border="0" cellpadding="0" cellspacing="0"
+																				style="border: 1px solid #cccccc;">
+																				<tr>
+																					<td width="183" align="center">
+
+																						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td style="height: 15px;" colspan="1" height="15"></td>
+																							</tr>
+																							<tr>
+																								<td align="center">
+																									<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																										<tr>
+																											<td width="20" align="center">
+																												<img
+																													src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/e62a28b5-7aea-44df-a621-2c555191cf79.png"
+																													alt="">
+																											</td>
+																											<td width="15" height="10" align="center" colspan="1"></td>
+																											<td align="center" class="c-light f-18 bold">
+																												Standard
+																											</td>
+																										</tr>
+																									</table>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="height: 15px;" colspan="1" height="15"></td>
+																							</tr>
+																							<tr>
+																								<td align="center">
+																									<img class="w-100"
+																										src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/5cc37024-1d83-4b10-8e68-e04fed0df3c0.jpg"
+																										alt="">
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="height: 15px;" colspan="1" height="15"></td>
+																							</tr>
+																							<tr>
+																								<td align="center">
+																									<table width="90%" border="0" cellpadding="0" cellspacing="0">
+																										<tr>
+																											<td align="center" class="f-15 c-light-2 l-h-26">
+																												Lorem ipsum dolor sit consectetur.
+																											</td>
+																										</tr>
+																									</table>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="height: 15px;" colspan="1" height="15"></td>
+																							</tr>
+																							<tr>
+																								<td bgcolor="#cccccc" align="center" height="1" style="height: 1px;"
+																									colspan="1"></td>
+																							</tr>
+																							<tr>
+																								<td style="height: 20px;" colspan="1" height="0"></td>
+																							</tr>
+																							<tr>
+																								<td align="center" class="c-yellow bold f-30">
+																									$99.99
+																								</td>
+																							</tr>
+																							<tr>
+																								<td align="center" class="c-light-2 t-cap bold f-17">
+																									per month
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="height: 20px;" colspan="1" height="20"></td>
+																							</tr>
+																							<tr>
+																								<td align="center">
+																									<table class="ib" border="0" cellpadding="0" cellspacing="0">
+																										<tr>
+																											<td bgcolor="#FF900E" class="btn" align="center">
+																												<a href="#link">buy now</a>
+																											</td>
+																										</tr>
+																									</table>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="height: 20px;" colspan="1" height="0"></td>
+																							</tr>
+																						</table>
+
+																					</td>
+																				</tr>
+																			</table>
+																			<!--[if (gte mso 9)|(IE)]>
+						        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+										<![endif]-->
+																			<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td width="20" height="20" align="center" colspan="1"></td>
+																				</tr>
+																			</table>
+																			<!--[if (gte mso 9)|(IE)]>
+						        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+										<![endif]-->
+																			<table class="rs-ib b-r-5" style="border: 1px solid #cccccc;" border="0"
+																				cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td width="183" align="center">
+
+																						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td style="height: 15px;" colspan="1" height="15"></td>
+																							</tr>
+																							<tr>
+																								<td align="center">
+																									<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																										<tr>
+																											<td width="20" align="center">
+																												<img
+																													src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/e62a28b5-7aea-44df-a621-2c555191cf79.png"
+																													alt="">
+																											</td>
+																											<td width="15" height="10" align="center" colspan="1"></td>
+																											<td align="center" class="c-light f-18 bold">
+																												Perfact
+																											</td>
+																										</tr>
+																									</table>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="height: 15px;" colspan="1" height="15"></td>
+																							</tr>
+																							<tr>
+																								<td align="center">
+																									<img class="w-100"
+																										src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/220eccca-1190-4f90-b9b3-55a0e049748b.jpg"
+																										alt="">
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="height: 15px;" colspan="1" height="15"></td>
+																							</tr>
+																							<tr>
+																								<td align="center">
+																									<table width="90%" border="0" cellpadding="0" cellspacing="0">
+																										<tr>
+																											<td align="center" class="f-15 c-light-2 l-h-26">
+																												Lorem ipsum dolor sit consectetur.
+																											</td>
+																										</tr>
+																									</table>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="height: 15px;" colspan="1" height="15"></td>
+																							</tr>
+																							<tr>
+																								<td bgcolor="#cccccc" align="center" height="1" style="height: 1px;"
+																									colspan="1"></td>
+																							</tr>
+																							<tr>
+																								<td style="height: 20px;" colspan="1" height="0"></td>
+																							</tr>
+																							<tr>
+																								<td align="center" class="c-yellow bold f-30">
+																									$999.99
+																								</td>
+																							</tr>
+																							<tr>
+																								<td align="center" class="c-light-2 t-cap bold f-17">
+																									Per Month
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="height: 20px;" colspan="1" height="20"></td>
+																							</tr>
+																							<tr>
+																								<td align="center">
+																									<table class="ib" border="0" cellpadding="0" cellspacing="0">
+																										<tr>
+																											<td bgcolor="#FF900E" class="btn" align="center">
+																												<a href="#link">buy now</a>
+																											</td>
+																										</tr>
+																									</table>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="height: 20px;" colspan="1" height="0"></td>
+																							</tr>
+																						</table>
+
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td style="height: 50px;" colspan="1" height="50"></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<!-- >>>>>>>>>>>>  PRICE END <<<<<<<<<<<< -->
+
+								<!-- >>>>>>>>>>>>  DEVELOPER <<<<<<<<<<<< -->
+								<tr>
+									<td bgcolor="#F4F6F7" align="center">
+										<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td style="height: 50px;" colspan="1" height="50"></td>
+											</tr>
+											<tr>
+												<td width="600" align="center">
+													<table width="100%" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td align="center" class="c-light f-30 bold">
+																Pricing Plans For Developers
+															</td>
+														</tr>
+														<tr>
+															<td style="height: 20px;" colspan="1" height="20"></td>
+														</tr>
+														<tr>
+															<td align="center" class="f-15 c-light-2 l-h-26">
+																Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam officiis, dicta,
+																adipisci laudantium laborum
+																deleniti.
+															</td>
+														</tr>
+														<tr>
+															<td style="height: 50px;" colspan="1" height="50"></td>
+														</tr>
+														<tr>
+															<td align="center">
+																<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td align="center" class="f-0">
+																			<table class="rs-ib b-r-5" border="0" cellpadding="0" cellspacing="0"
+																				style="border: 1px solid #cccccc;">
+																				<tr>
+																					<td width="288" align="center">
+
+																						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td style="height: 15px;" colspan="1" height="15"></td>
+																							</tr>
+																							<tr>
+																								<td align="center">
+																									<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																										<tr>
+																											<td width="20" align="center">
+																												<img
+																													src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/e62a28b5-7aea-44df-a621-2c555191cf79.png"
+																													alt="">
+																											</td>
+																											<td width="15" height="10" align="center" colspan="1"></td>
+																											<td align="center" class="c-light f-18 bold">
+																												Normal
+																											</td>
+																										</tr>
+																									</table>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="height: 15px;" colspan="1" height="15"></td>
+																							</tr>
+																							<tr>
+																								<td align="center">
+																									<img class="w-100"
+																										src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/255bd1a2-9629-4bcf-85d8-3bdc55bd1056.jpg"
+																										alt="">
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="height: 15px;" colspan="1" height="15"></td>
+																							</tr>
+																							<tr>
+																								<td align="center">
+																									<table width="90%" border="0" cellpadding="0" cellspacing="0">
+																										<tr>
+																											<td align="center" class="f-15 c-light-2 l-h-26">
+																												Lorem ipsum dolor sit consectetur.
+																											</td>
+																										</tr>
+																									</table>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="height: 15px;" colspan="1" height="15"></td>
+																							</tr>
+																							<tr>
+																								<td bgcolor="#cccccc" align="center" height="1" style="height: 1px;"
+																									colspan="1"></td>
+																							</tr>
+																							<tr>
+																								<td style="height: 20px;" colspan="1" height="0"></td>
+																							</tr>
+																							<tr>
+																								<td align="center" class="c-yellow bold f-30">
+																									$9.99
+																								</td>
+																							</tr>
+																							<tr>
+																								<td align="center" class="c-light-2 t-cap bold f-17">
+																									per month
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="height: 20px;" colspan="1" height="20"></td>
+																							</tr>
+																							<tr>
+																								<td align="center">
+																									<table class="ib" border="0" cellpadding="0" cellspacing="0">
+																										<tr>
+																											<td bgcolor="#FF900E" class="btn" align="center">
+																												<a href="#link">buy now</a>
+																											</td>
+																										</tr>
+																									</table>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="height: 20px;" colspan="1" height="0"></td>
+																							</tr>
+																						</table>
+
+																					</td>
+																				</tr>
+																			</table>
+																			<!--[if (gte mso 9)|(IE)]>
+						        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+										<![endif]-->
+																			<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td width="20" height="20" align="center" colspan="1"></td>
+																				</tr>
+																			</table>
+																			<!--[if (gte mso 9)|(IE)]>
+							        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+											<![endif]-->
+																			<table class="rs-ib b-r-5" style="border: 1px solid #cccccc;" border="0"
+																				cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td width="288" align="center">
+
+																						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td style="height: 15px;" colspan="1" height="15"></td>
+																							</tr>
+																							<tr>
+																								<td align="center">
+																									<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																										<tr>
+																											<td width="20" align="center">
+																												<img
+																													src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/e62a28b5-7aea-44df-a621-2c555191cf79.png"
+																													alt="">
+																											</td>
+																											<td width="15" height="10" align="center" colspan="1"></td>
+																											<td align="center" class="c-light f-18 bold">
+																												Perfact
+																											</td>
+																										</tr>
+																									</table>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="height: 15px;" colspan="1" height="15"></td>
+																							</tr>
+																							<tr>
+																								<td align="center">
+																									<img class="w-100"
+																										src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/0dfa637e-6441-4f4a-a93d-3fbf19482cd9.jpg"
+																										alt="">
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="height: 15px;" colspan="1" height="15"></td>
+																							</tr>
+																							<tr>
+																								<td align="center">
+																									<table width="90%" border="0" cellpadding="0" cellspacing="0">
+																										<tr>
+																											<td align="center" class="f-15 c-light-2 l-h-26">
+																												Lorem ipsum dolor sit consectetur.
+																											</td>
+																										</tr>
+																									</table>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="height: 15px;" colspan="1" height="15"></td>
+																							</tr>
+																							<tr>
+																								<td bgcolor="#cccccc" align="center" height="1" style="height: 1px;"
+																									colspan="1"></td>
+																							</tr>
+																							<tr>
+																								<td style="height: 20px;" colspan="1" height="0"></td>
+																							</tr>
+																							<tr>
+																								<td align="center" class="c-yellow bold f-30">
+																									$999.99
+																								</td>
+																							</tr>
+																							<tr>
+																								<td align="center" class="c-light-2 t-cap bold f-17">
+																									per month
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="height: 20px;" colspan="1" height="20"></td>
+																							</tr>
+																							<tr>
+																								<td align="center">
+																									<table class="ib" border="0" cellpadding="0" cellspacing="0">
+																										<tr>
+																											<td bgcolor="#FF900E" class="btn" align="center">
+																												<a href="#link">buy now</a>
+																											</td>
+																										</tr>
+																									</table>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="height: 20px;" colspan="1" height="0"></td>
+																							</tr>
+																						</table>
+
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td style="height: 50px;" colspan="1" height="50"></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<!-- >>>>>>>>>>>>  DEVELOPER END <<<<<<<<<<<< -->
+
+								<!-- >>>>>>>>>>>>  COMUNITY <<<<<<<<<<<< -->
+								<tr>
+									<td bgcolor="#FFFFFF" align="center">
+										<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td style="height: 50px;" colspan="1" height="0"></td>
+											</tr>
+											<tr>
+												<td width="600" align="center">
+													<table width="100%" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td align="center">
+																<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td align="center" class="f-0">
+																			<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td width="150" align="center">
+																						<img class="w-100"
+																							src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/c79b34ae-10d6-414a-a50b-1b86028fa5a3.jpg"
+																							alt="">
+																					</td>
+																				</tr>
+																			</table>
+																			<!--[if (gte mso 9)|(IE)]>
+																				        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																								<![endif]-->
+																			<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td width="20" height="10" colspan="1" align="center"></td>
+																				</tr>
+																			</table>
+																			<!--[if (gte mso 9)|(IE)]>
+																				        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																								<![endif]-->
+																			<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td height="150" width="430" align="center">
+																						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td class="f-13 c-light-2 bold">
+																									20.08/2019
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="height: 5px;" colspan="1" height="5"></td>
+																							</tr>
+																							<tr>
+																								<td class="f-23 bold c-light t-cap">
+																									Meet The Best Community
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="height: 20px;" colspan="1" height="0"></td>
+																							</tr>
+																							<tr>
+																								<td class="f-15 c-light-2">
+																									Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio dolorum
+																									dolorem quam suscipit neque nemo!
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="height: 10px;" colspan="1" height="10"></td>
+																							</tr>
+																							<tr>
+																								<td class="f-16 c-yellow">
+																									view now
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+														<tr>
+															<td style="height: 30px;" colspan="1" height="30"></td>
+														</tr>
+														<tr>
+															<td align="center">
+																<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td align="center" class="f-0">
+																			<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td width="150" align="center">
+																						<img class="w-100"
+																							src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/38964d30-cf38-4d3a-8b4b-96db10dcd220.jpg"
+																							alt="">
+																					</td>
+																				</tr>
+																			</table>
+																			<!--[if (gte mso 9)|(IE)]>
+																																					        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																																									<![endif]-->
+																			<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td width="20" height="10" colspan="1" align="center"></td>
+																				</tr>
+																			</table>
+																			<!--[if (gte mso 9)|(IE)]>
+																																					        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																																									<![endif]-->
+																			<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td height="150" width="430" align="center">
+																						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td class="f-13 c-light-2 bold">
+																									Annoucment
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="height: 5px;" colspan="1" height="5"></td>
+																							</tr>
+																							<tr>
+																								<td class="f-23 bold c-light t-cap">
+																									Meet The Best Community
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="height: 20px;" colspan="1" height="0"></td>
+																							</tr>
+																							<tr>
+																								<td class="f-15 c-light-2">
+																									Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio dolorum
+																									dolorem quam suscipit neque nemo!
+																								</td>
+																							</tr>
+																							<tr>
+																								<td style="height: 10px;" colspan="1" height="10"></td>
+																							</tr>
+																							<tr>
+																								<td class="f-16 c-yellow">
+																									view now
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td style="height: 50px;" colspan="1" height="0"></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<!-- >>>>>>>>>>>>  COMUNITY END <<<<<<<<<<<< -->
+
+								<!-- >>>>>>>>>>>>  DEMO <<<<<<<<<<<< -->
+								<tr>
+									<td align="center">
+										<table width="100%" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td align="center">
+													<!-- Start Background Image Table -->
+													<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+														<tbody>
+															<tr>
+																<td height="400" align="center"
+																	style="background-image: url('https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/aa2a8a0d-a828-450e-a64d-af24921eedda.jpg');">
+																	<!--[if gte mso 9]>
+											                                                <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:800px">
+											                                                <v:fill type="frame" src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/aa2a8a0d-a828-450e-a64d-af24921eedda.jpg" color="#ffffff" />
+											                                                <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+											                                                <div style="font-size:1px;line-height:1px">
+											                                                <table width="800" cellspacing="0" cellpadding="0" border="0" align="center">
+											                                                <tbody>
+											                                                <tr>
+											                                                <td height="400" align="center">
+											                                                <![endif]-->
+
+																	<table width="100%" cellpadding="0" cellspacing="0" align="center" border="0">
+																		<tr>
+																			<td align="center" height="400" class="" style="height: 400px">
+
+																				<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																					<tr>
+																						<td width="600" align="center">
+																							<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																								<tr>
+																									<td align="center" class="f-25 c-light">Start Builds your <span
+																											class="bold">E-mail</span> Template
+																										<span class="c-yellow">Now!</span></td>
+																								</tr>
+																								<tr>
+																									<td style="height: 20px;" colspan="1" height="20"></td>
+																								</tr>
+																								<tr>
+																									<td align="center" class="f-15 c-light-2 l-h-26">
+																										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus
+																										aspernatur, quae repudiandae. Tempore id, cum.
+																									</td>
+																								</tr>
+																								<tr>
+																									<td style="height: 30px;" colspan="1" height="30"></td>
+																								</tr>
+																								<tr>
+																									<td align="center">
+																										<table class="ib b-r-5" border="0" cellpadding="0" cellspacing="0">
+																											<tr>
+																												<td bgcolor="#FF900E" class="btn" align="center">
+																													<a href="#link" class="f-17">TRY UR DEMO</a>
+																												</td>
+																											</tr>
+																										</table>
+																									</td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+
+
+																			</td>
+																		</tr>
+																	</table>
+
+																	<!--[if gte mso 9]>
+											                                                </td>
+											                                                </tr>
+											                                                </tbody>
+											                                                </table>
+											                                                </div>
+											                                                </v:textbox>
+											                                                </v:rect>
+											                                                <![endif]-->
+
+																</td>
+															</tr>
+														</tbody>
+													</table>
+													<!-- End Background Image Table -->
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<!-- >>>>>>>>>>>>  DEMO END <<<<<<<<<<<< -->
+
+								<!-- >>>>>>>>>>>>  CONTACT <<<<<<<<<<<< -->
+								<tr>
+									<td bgcolor="#F4F6F7" align="center">
+										<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td style="height: 50px;" colspan="1" height="50"></td>
+											</tr>
+											<tr>
+												<td align="center" class="f-0">
+													<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td width="275" align="center">
+																<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td class="f-18 c-light bold">
+																			CONTACT US
+																		</td>
+																	</tr>
+																	<tr>
+																		<td style="height: 10px;" colspan="1" height="10"></td>
+																	</tr>
+																	<tr>
+																		<td class="f-15 c-light-2 l-h-26">
+																			Company Name 1234 Street <br>
+																			Stage Post 1234
+																		</td>
+																	</tr>
+																	<tr>
+																		<td style="height: 10px;" colspan="1" height="10"></td>
+																	</tr>
+																	<tr>
+																		<td class="f-15 c-light-2">
+																			Mail : <span class="c-yellow">info@youemail.com</span>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td style="height: 10px;" colspan="1" height="10"></td>
+																	</tr>
+																	<tr>
+																		<td class="c-light-2 f-15">
+																			Call Us : <span class="c-yellow">001-1234-5678</span>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+													<!--[if (gte mso 9)|(IE)]>
+														        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																		<![endif]-->
+													<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td height="20" colspan="1" width="50" align="center">
+															</td>
+														</tr>
+													</table>
+													<!--[if (gte mso 9)|(IE)]>
+														        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																		<![endif]-->
+													<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td width="275" align="center">
+																<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td align="center">
+																			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td class="f-18 c-light bold">
+																						ABOUT US
+																					</td>
+																				</tr>
+																				<tr>
+																					<td style="height: 10px;" colspan="1" height="10"></td>
+																				</tr>
+																				<tr>
+																					<td class="f-15 c-light-2 l-h-26">
+																						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas error
+																						dolores quia inventore, praesentium sint!
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td style="height: 50px;" colspan="1" height="50"></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<!-- >>>>>>>>>>>>  CONTACT END <<<<<<<<<<<< -->
+
+								<!-- >>>>>>>>>>>>  BOTTOM LINK <<<<<<<<<<<< -->
+								<tr>
+									<td bgcolor="#FFFFFF" align="center">
+										<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td style="height: 50px;" colspan="1" height="50"></td>
+											</tr>
+											<tr>
+												<td width="600" align="center">
+													<table width="100%" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td align="center" class="f-0">
+																<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td height="25" width="150" class="t-left-rs">
+																			<a href="#link" class="f-16 c-white">
+																				<img
+																					src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/be78e3e3-537c-417b-b189-ac3af58f0696.png"
+																					alt="">
+																			</a>
+																		</td>
+																	</tr>
+																</table>
+																<!--[if (gte mso 9)|(IE)]>
+																        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																				<![endif]-->
+																<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td width="50" height="10" colspan="1" align="center"></td>
+																	</tr>
+																</table>
+																<!--[if (gte mso 9)|(IE)]>
+																																	        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																																					<![endif]-->
+																<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td width="400" align="center" class="t-right-rs">
+																			<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td width="30" align="center">
+																						<a href="#link">
+																							<img
+																								src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/13919281-218b-45cf-9e55-54667255cf7f.png"
+																								alt="facebook">
+																						</a>
+																					</td>
+																					<td width="30" align="center">
+																						<a href="#link">
+																							<img
+																								src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/af8833e1-ed16-491f-af34-dd3934a2ee91.png"
+																								alt="gPlus">
+																						</a>
+																					</td>
+																					<td width="30" align="center">
+																						<a href="#link">
+																							<img
+																								src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/6f9fcc43-6039-408b-b90f-f47da9d30b9d.png"
+																								alt="instagram">
+																						</a>
+																					</td>
+																					<td width="30" align="center">
+																						<a href="#link">
+																							<img
+																								src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/e3751e73-7762-407e-bc3f-e66789a678f1.png"
+																								alt="linkding">
+																						</a>
+																					</td>
+																					<td width="30" align="center">
+																						<a href="#link">
+																							<img
+																								src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/b14800cb-d262-4922-8c6c-142062375727.png"
+																								alt="pintarest">
+																						</a>
+																					</td>
+																					<td width="30" align="center">
+																						<a href="#link">
+																							<img
+																								src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/de01340d-aae0-4089-bb81-9c25718574af.png"
+																								alt="rss">
+																						</a>
+																					</td>
+																					<td width="30" align="center">
+																						<a href="#link">
+																							<img
+																								src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/4191c346-8bb0-4c3b-8fb6-0996312903ad.png"
+																								alt="twitter">
+																						</a>
+																					</td>
+																					<td width="30" align="center">
+																						<a href="#link">
+																							<img
+																								src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/6f9a8835-19d4-46e2-813b-c075730db146.png"
+																								alt="vemeo">
+																						</a>
+																					</td>
+																					<td width="30" align="center">
+																						<a href="#link">
+																							<img
+																								src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/82a1ee19-3d04-4f06-9f41-547a62eebdef.png"
+																								alt="youtube">
+																						</a>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td style="height: 50px;" colspan="1" height="50"></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<!-- >>>>>>>>>>>>  BOTTOM LINK END <<<<<<<<<<<< -->
+
+								<!-- >>>>>>>>>>>>  FOOTER <<<<<<<<<<<< -->
+								<tr>
+									<td bgcolor="#FF900E" align="center">
+										<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td style="height: 20px;" colspan="1" height="20"></td>
+											</tr>
+											<tr>
+												<td width="600" align="center">
+													<table width="100%" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td align="center" class="f-0">
+																<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td width="420" align="center" class="f-14 c-white">
+																			&COPY; 2019, Coded by Mustafa Mahmud, design by Themeforest
+																		</td>
+																	</tr>
+																</table>
+																<table class="rs-ib" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td width="30" height="10" colspan="1" align="center"></td>
+																	</tr>
+																</table>
+																<table class="rs-ib rs-w-95" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td width="150" align="center">
+																			<a href="#link" class="f-13 c-white">UNSUBSCRIBE</a>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td style="height: 20px;" colspan="1" height="20"></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<!-- >>>>>>>>>>>>  FOOTER END <<<<<<<<<<<< -->
+
+
+
+
+							</table>
+						</td>
+					</tr>
+				</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

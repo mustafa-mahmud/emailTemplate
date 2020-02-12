@@ -1,0 +1,297 @@
+body {
+  margin: 0;
+  leftmargin: 0;
+  topmargin: 0;
+  padding: 0;
+  background-color: #EEF0F3;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+img,
+a img {
+  border: 0;
+  outline: none;
+  text-decoration: none;
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+table {
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+}
+
+a[href^=tel],
+a[href^=sms] {
+  color: inherit;
+  cursor: default;
+  text-decoration: none;
+}
+
+p,
+a,
+li,
+td,
+body,
+table,
+blockquote {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  max-width: 600px !important;
+  display: block;
+}
+
+.hideMSO {
+  mso-hide: all !important;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+@media only screen and (max-width: 400px) {
+  .rs-100 {
+    width: 100% !important;
+  }
+}
+
+.hideDesktop {
+  display: none;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 400px) {
+  .hideDesktop {
+    display: block;
+    width: auto;
+    height: auto;
+    visibility: visible;
+  }
+}
+
+.hideMobile {
+  display: block;
+  width: auto;
+  height: auto;
+  visibility: visible;
+}
+
+@media only screen and (max-width: 400px) {
+  .hideMobile {
+    display: none;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+}
+
+.ib {
+  display: inline-block;
+}
+
+@media only screen and (max-width: 400px) {
+  .ib {
+    display: table !important;
+    width: 100% !important;
+  }
+}
+
+.f-16 {
+  font-size: 16px;
+}
+
+.btn {
+  width: 100px;
+  height: 35px;
+  background-color: #F06060;
+  border-radius: 3px;
+  color: #333333;
+}
+
+@media only screen and (max-width: 400px) {
+  .btn {
+    width: 60px;
+  }
+}
+
+.btn__link {
+  color: #333333;
+}
+
+.container {
+  width: 600px;
+  font-size: 0;
+}
+
+.header__container {
+  height: 100px;
+  font-size: 0;
+}
+
+.header__logo {
+  height: 35px;
+  font-size: 16px;
+}
+
+.header__menu {
+  font-size: 0;
+}
+
+.header__link {
+  font-size: 16px;
+  color: #333333;
+}
+
+.hero__container {
+  font-size: 0;
+}
+
+.hero__img {
+  width: 100%;
+}
+
+.feature__table {
+  text-align: center;
+}
+
+.feature__title {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  border-left: 5px solid crimson;
+  border-right: 5px solid crimson;
+}
+
+@media only screen and (max-width: 400px) {
+  .feature__title {
+    font-size: 23px;
+    height: 25px !important;
+    display: inline-block !important;
+  }
+}
+
+.feature__title span {
+  color: blueviolet;
+}
+
+.feature__info {
+  font-size: 18px;
+  font-weight: bold;
+  color: white !important;
+}
+
+.feature__link {
+  font-size: 19px;
+  color: #333333;
+}
+
+@media only screen and (max-width: 400px) {
+  .feature__box {
+    width: 95% !important;
+  }
+}
+
+.feature__box-container {
+  font-size: 0;
+}
+
+.gallery__container {
+  font-size: 0;
+}
+
+@media only screen and (max-width: 400px) {
+  .gallery__box {
+    width: 95% !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .gallery__btn {
+    width: 95% !important;
+  }
+}
+
+.gallery__view {
+  text-align: right;
+}
+
+@media only screen and (max-width: 400px) {
+  .gallery__view {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .info__box {
+    width: 95% !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .social__box {
+    width: 95% !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .footer__box {
+    width: 95% !important;
+  }
+}
+
+.footer__copy {
+  text-align: left;
+}
+
+@media only screen and (max-width: 400px) {
+  .footer__copy {
+    text-align: center !important;
+  }
+}
+
+.footer__unsb {
+  text-align: right;
+}
+
+@media only screen and (max-width: 400px) {
+  .footer__unsb {
+    text-align: center !important;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+	xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+	<meta charset="utf-8"> <!-- utf-8 works for most cases -->
+	<meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+	<meta name="x-apple-disable-message-reformatting"> <!-- Disable auto-scale in iOS 10 Mail entirely -->
+	<title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+	<title>Multimail</title>
+	<link rel="stylesheet" href="main.css">
+
+	<style>
+		body {
+			margin: 0;
+			leftmargin: 0;
+			topmargin: 0;
+			padding: 0;
+			background-color: #EEF0F3;
+		}
+
+		table {
+			border-collapse: collapse;
+		}
+
+		img,
+		a img {
+			border: 0;
+			outline: none;
+			text-decoration: none;
+		}
+
+		img {
+			-ms-interpolation-mode: bicubic;
+		}
+
+		table {
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+		}
+
+		a[href^=tel],
+		a[href^=sms] {
+			color: inherit;
+			cursor: default;
+			text-decoration: none;
+		}
+
+		p,
+		a,
+		li,
+		td,
+		body,
+		table,
+		blockquote {
+			-ms-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		p {
+			display: block;
+			margin: 0;
+			padding: 0;
+		}
+
+		a[x-apple-data-detectors] {
+			color: inherit !important;
+			text-decoration: none !important;
+			font-size: inherit !important;
+			font-family: inherit !important;
+			font-weight: inherit !important;
+			line-height: inherit !important;
+		}
+
+		a {
+			text-decoration: none;
+			display: inline-block;
+		}
+
+		img {
+			max-width: 600px !important;
+			display: block;
+		}
+
+		.hideMSO {
+			mso-hide: all !important;
+		}
+
+		.w-100 {
+			width: 100%;
+		}
+
+		@media only screen and (max-width: 400px) {
+			.rs-100 {
+				width: 100% !important;
+			}
+		}
+
+		.hideDesktop {
+			display: none;
+			width: 0;
+			height: 0;
+			visibility: hidden;
+		}
+
+		@media only screen and (max-width: 400px) {
+			.hideDesktop {
+				display: block;
+				width: auto;
+				height: auto;
+				visibility: visible;
+			}
+		}
+
+		.hideMobile {
+			display: block;
+			width: auto;
+			height: auto;
+			visibility: visible;
+		}
+
+		@media only screen and (max-width: 400px) {
+			.hideMobile {
+				display: none;
+				width: 0;
+				height: 0;
+				visibility: hidden;
+			}
+		}
+
+		.ib {
+			display: inline-block;
+		}
+
+		@media only screen and (max-width: 400px) {
+			.ib {
+				display: table !important;
+				width: 100% !important;
+			}
+		}
+
+		.f-16 {
+			font-size: 16px;
+		}
+
+		.btn {
+			width: 100px;
+			height: 35px;
+			background-color: #F06060;
+			border-radius: 3px;
+			color: #333333;
+		}
+
+		@media only screen and (max-width: 400px) {
+			.btn {
+				width: 60px;
+			}
+		}
+
+		.btn__link {
+			color: #333333;
+		}
+
+		.container {
+			width: 600px;
+			font-size: 0;
+		}
+
+		.header__container {
+			height: 100px;
+			font-size: 0;
+		}
+
+		.header__logo {
+			height: 35px;
+			font-size: 16px;
+		}
+
+		.header__menu {
+			font-size: 0;
+		}
+
+		.header__link {
+			font-size: 16px;
+			color: #333333;
+		}
+
+		.hero__container {
+			font-size: 0;
+		}
+
+		.hero__img {
+			width: 100%;
+		}
+
+		.feature__table {
+			text-align: center;
+		}
+
+		.feature__title {
+			font-size: 24px;
+			font-weight: bold;
+			letter-spacing: 1.5px;
+			border-left: 5px solid crimson;
+			border-right: 5px solid crimson;
+		}
+
+		@media only screen and (max-width: 400px) {
+			.feature__title {
+				font-size: 23px;
+				height: 25px !important;
+				display: inline-block !important;
+			}
+		}
+
+		.feature__title span {
+			color: blueviolet;
+		}
+
+		.feature__info {
+			font-size: 18px;
+			font-weight: bold;
+			color: white !important;
+		}
+
+		.feature__link {
+			font-size: 19px;
+			color: #333333;
+		}
+
+		@media only screen and (max-width: 400px) {
+			.feature__box {
+				width: 95% !important;
+			}
+		}
+
+		.feature__box-container {
+			font-size: 0;
+		}
+
+		.gallery__container {
+			font-size: 0;
+		}
+
+		@media only screen and (max-width: 400px) {
+			.gallery__box {
+				width: 95% !important;
+			}
+		}
+
+		@media only screen and (max-width: 400px) {
+			.gallery__btn {
+				width: 95% !important;
+			}
+		}
+
+		.gallery__view {
+			text-align: right;
+		}
+
+		@media only screen and (max-width: 400px) {
+			.gallery__view {
+				text-align: center;
+			}
+		}
+
+		@media only screen and (max-width: 400px) {
+			.info__box {
+				width: 95% !important;
+			}
+		}
+
+		@media only screen and (max-width: 400px) {
+			.social__box {
+				width: 95% !important;
+			}
+		}
+
+		@media only screen and (max-width: 400px) {
+			.footer__box {
+				width: 95% !important;
+			}
+		}
+
+		.footer__copy {
+			text-align: left;
+		}
+
+		@media only screen and (max-width: 400px) {
+			.footer__copy {
+				text-align: center !important;
+			}
+		}
+
+		.footer__unsb {
+			text-align: right;
+		}
+
+		@media only screen and (max-width: 400px) {
+			.footer__unsb {
+				text-align: center !important;
+			}
+		}
+
+		/*# sourceMappingURL=main.css.map */
+	</style>
+
+</head>
+
+<body background="#EEF0F3">
+	<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td align="center">
+				<table align="center" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<!-- MAIN CONTAINER 600 -->
+						<td width="600" class="container" align="center">
+
+							<!-- header -->
+							<table class="ib" class="header" border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									<td height="100" class="header__container" align="center">
+
+										<table class="ib" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td height="35" class="header__logo" align="center">
+													<a href="#link">
+														<img
+															src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/37177b41-2105-4117-ae83-13e9fef7fc93.png"
+															alt="logo">
+													</a>
+												</td>
+											</tr>
+										</table>
+
+										<!--[if (gte mso 9)|(IE)]> 
+										        <td align="center" style="text-align:center;vertical-align:middle;font-size:0;">
+										        <![endif]-->
+
+										<table class="ib" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td class="header__menu" align="center">
+													<table border="0" cellpadding="0" cellspacing="0" style="display: inline-block;">
+														<tr>
+															<td class="f-16" align="center">&nbsp;&nbsp;&nbsp; Home &nbsp;&nbsp;&nbsp;|</td>
+															<td class="f-16" align="center">&nbsp;&nbsp;&nbsp; About &nbsp;&nbsp;&nbsp;|</td>
+															<td class="f-16" align="center">&nbsp;&nbsp;&nbsp; Contact
+																&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</td>
+															<td bgcolor="#F06060" width="100" height="35" class="btn f-16" align="center"><a
+																	class="btn__link" href="#link">Signup</a></td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+
+									</td>
+								</tr>
+							</table>
+							<!-- header end -->
+
+							<!-- hero -->
+							<table class="hero" border="0" cellpadding="0" cellspacing="0" width="100%">
+								<tr>
+									<td class="hero__container" align="center">
+										<a href="#link"><img class="hero__img"
+												src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/1e052dcf-9ce2-4cfc-9183-044d271a5cc6.jpg"
+												alt="hero"></a>
+									</td>
+								</tr>
+							</table>
+							<!-- hero end -->
+
+							<!-- feature -->
+							<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="100%">
+								<tr>
+									<td width="600" align="center">
+										<table class="feature__box ib" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td style="height: 50px;" colspan="1" height="50"></td>
+											</tr>
+											<tr>
+												<td class="feature__title" align="center">&nbsp;&nbsp;&nbsp; FEATURE <span>&</span> PRODUCT
+													&nbsp;&nbsp;&nbsp;</td>
+											</tr>
+											<tr>
+												<td style="height: 10px;" colspan="1" height="10"></td>
+											</tr>
+											<tr>
+												<td align="center" style="font-size: 16px;">
+													<table class="ib" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td align="center">Marketing &nbsp;&nbsp;|</td>
+															<td align="center">&nbsp;&nbsp;Coding&nbsp;&nbsp;|</td>
+															<td align="center">&nbsp;&nbsp;Setting</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td style="height: 50px;" colspan="1" height="50"></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td width="560" align="center">
+
+										<table class="ib" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td align="center" style="font-size: 0;">
+													<table class="feature__box ib" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td width="185" align="center">
+																<table bgcolor="#1A5276" class="ib" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td style="height: 20px;" colspan="1" height="20"></td>
+																	</tr>
+																	<tr>
+																		<td width="180" align="center" style="font-size: 0px;">
+																			<a href="#link">
+																				<img
+																					src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/3c53ee48-6c72-4657-9a9a-1f2a7d16d17b.png"
+																					alt="">
+																			</a>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td style="height: 10px;" colspan="1" height="10"></td>
+																	</tr>
+																	<tr>
+																		<td class="feature__info" align="center">
+																			Top Award 2018
+																		</td>
+																	</tr>
+																	<tr>
+																		<td style="height: 20px;" colspan="1" height="20"></td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+														<tr>
+															<td style="height: 10px;" colspan="1" height="10"></td>
+														</tr>
+													</table>
+													<!--[if (gte mso 9)|(IE)]>
+																																        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																																        <![endif]-->
+													<table class="feature__box ib" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td width="185" align="center">
+																<table bgcolor="#7E5109" class="ib" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td style="height: 20px;" colspan="1" height="20"></td>
+																	</tr>
+																	<tr>
+																		<td width="180" align="center" style="font-size: 0px;">
+																			<img
+																				src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/f11b9d4b-0775-4d0f-9cf8-a2e4bb7a6ebb.png"
+																				alt="">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td style="height: 10px;" colspan="1" height="10"></td>
+																	</tr>
+																	<tr>
+																		<td class="feature__info" align="center">
+																			Top Option 2019
+																		</td>
+																	</tr>
+																	<tr>
+																		<td style="height: 20px;" colspan="1" height="20"></td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+														<tr>
+															<td style="height: 10px;" colspan="1" height="10"></td>
+														</tr>
+													</table>
+													<!--[if (gte mso 9)|(IE)]>
+																																        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																																        <![endif]-->
+													<table class="feature__box ib" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td width="185" align="center">
+																<table bgcolor="#512E5F" class="ib" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td style="height: 20px;" colspan="1" height="20"></td>
+																	</tr>
+																	<tr>
+																		<td width="180" align="center" style="font-size: 0px;">
+																			<img
+																				src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/4d139893-df7b-4f92-96b9-e5fb508b29d3.png"
+																				alt="">
+																		</td>
+																	</tr>
+																	<tr>
+																		<td style="height: 10px;" colspan="1" height="10"></td>
+																	</tr>
+																	<tr>
+																		<td class="feature__info" align="center">
+																			Top Setting 2017
+																		</td>
+																	</tr>
+																	<tr>
+																		<td style="height: 20px;" colspan="1" height="20"></td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+														<tr>
+															<td style="height: 10px;" colspan="1" height="10"></td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td style="height: 50px;" colspan="1" height="50"></td>
+											</tr>
+										</table>
+
+									</td>
+								</tr>
+							</table>
+							<!-- feature end -->
+
+							<!-- gallery -->
+							<table bgcolor="#FFFFFF" class="gallery" border="0" cellpadding="0" cellspacing="0" width="100%">
+								<tr>
+									<td align="center">
+										<table class="ib" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td width="560" align="center">
+													<!-- gallery -->
+													<table class="gallery__box" class="ib" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td class="gallery__container" align="center" style="font-size: 0;">
+																<!-- first part -->
+																<table class="ib" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td width="180"><img class="rs-100"
+																				src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/5e431f8a-31df-4b92-a724-fa6b71e2e6ce.jpg"
+																				alt=""></td>
+																	</tr>
+																	<tr>
+																		<td style="height: 10px;" colspan="1" height="10"></td>
+																	</tr>
+																	<tr>
+																		<td width="180"><img class="rs-100"
+																				src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/7f74b9fc-f757-4a2b-a50e-45b1ac137b3d.jpg"
+																				alt=""></td>
+																	</tr>
+																	<tr>
+																		<td class="hideDesktop" style="height: 10px;" colspan="1" height="10"></td>
+																	</tr>
+																</table>
+																<!-- first part end -->
+																<!--[if (gte mso 9)|(IE)]>
+																	        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																					<![endif]-->
+
+																<!-- second part -->
+																<table class="ib" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td><img class="rs-100"
+																				src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/890869c6-27d1-43e4-b020-c1580c1d47cc.jpg"
+																				alt=""></td>
+																	</tr>
+																	<tr>
+																		<td style="height: 10px;" colspan="1" height="10"></td>
+																	</tr>
+																	<tr>
+																		<td>
+																			<table border="0" cellpadding="0" cellspacing="0" width="100%">
+																				<tr>
+																					<td>
+																						<table class="ib" border="0" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td width="180"><img class="rs-100"
+																										src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/f7457052-8bf9-4d14-8447-9697a2beded6.jpg"
+																										alt=""></td>
+																							</tr>
+																							<tr>
+																								<td class="hideDesktop" style="height: 10px;" colspan="1" height="10">
+																								</td>
+																							</tr>
+																						</table>
+																						<!--[if (gte mso 9)|(IE)]>
+																							        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																							        <![endif]-->
+																						<table class="ib" border="0" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td width="185" align="right"><img class="rs-100"
+																										src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/0f4534c9-61d4-4b1d-ad38-3ffb1f770712.jpg"
+																										alt=""></td>
+																							</tr>
+																							<tr>
+																								<td style="height: 10px;" colspan="1" height="10"></td>
+																							</tr>
+																							<tr>
+																								<td width="185" align="right"><img class="rs-100"
+																										src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/fc6291c1-747d-42c4-9ff0-a8ddc7f3a863.jpg"
+																										alt=""></td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+																<!-- second part end -->
+															</td>
+														</tr>
+														<tr>
+															<td style="height: 50px;" colspan="1" height="50"></td>
+														</tr>
+													</table>
+													<!-- gallery end -->
+
+													<!-- gallery info -->
+													<table border="0" cellpadding="0" cellspacing="0" width="100%">
+														<tr>
+															<td align="center" style="font-size: 0;">
+																<!-- 2 button -->
+																<table class="ib" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td width="350" align="center">
+																			<table class="ib gallery__btn" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td align="center" style="font-size: 0;">
+																						<table class="ib" border="0" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td width="165" height="40" bgcolor="#C1C7CF" align="center"
+																									style="font-size: 15px;"><a href="#link"><a href="#link"
+																											style="color: #000000;">27 NOV 2019</a></a>
+																								</td>
+																							</tr>
+																						</table>
+																						<!--[if (gte mso 9)|(IE)]>
+																							        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																							        <![endif]-->
+																						<table class="ib" border="0" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td width="20" style="height: 10px;" colspan="1" height="10"></td>
+																							</tr>
+																						</table>
+																						<!--[if (gte mso 9)|(IE)]>
+																							        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																							        <![endif]-->
+																						<table class="ib" border="0" cellpadding="0" cellspacing="0">
+																							<tr>
+																								<td width="165" height="40" bgcolor="#C1C7CF" align="center"
+																									style="font-size: 15px;"><a href="#link" style="color: #000000;">BY:
+																										JHONE
+																										DOE</a>
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td style="height: px;" colspan="1" height="5"></td>
+																	</tr>
+																</table>
+																<!-- 2 button end -->
+																<!--[if (gte mso 9)|(IE)]>
+																		        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																		        <![endif]-->
+																<table class="ib gallery__btn" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td style="height: px;" colspan="1" height="5"></td>
+																	</tr>
+																	<tr>
+																		<td class="gallery__view" width="210" height="40" style="font-size: 20px;">
+																			<a href="#link" style="color: #000000;"><img style="display: inline-block;"
+																					src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/92244f92-2827-4731-8faf-dacfe8eb0e78.png"
+																					alt=""> &nbsp;&nbsp;view all</a>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td style="height: px;" colspan="1" height="5"></td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+													<!-- gallery info end -->
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							<!-- gallery end -->
+
+							<!-- info all -->
+							<table bgcolor="#FFFFFF" align="center" class="info" border="0" cellpadding="0" cellspacing="0"
+								width="100%">
+								<tr>
+									<td align="center">
+										<table class="ib" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<td width="560" align="center" style="font-size: 0;">
+													<table class="info__box ib" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td style="height: 100px;" colspan="1" height="100"></td>
+														</tr>
+														<tr>
+															<td align="center"
+																style="font-size: 17px;color: #333333;line-height: 25px;text-align: justify;">Lorem
+																ipsum
+																dolor sit amet
+																consectetur adipisicing elit. Ipsa
+																repellendus similique facilis eveniet, laboriosam neque beatae officia maiores tenetur
+																ea, id quae! Ipsum tenetur vero laudantium sequi exercitationem optio sapiente!</td>
+														</tr>
+														<tr>
+															<td style="height: 20px;" colspan="1" height="20"></td>
+														</tr>
+														<tr>
+															<td align="center" style="font-size: 45px;font-weight: bold;letter-spacing: 2px;"><span
+																	style="color: #F06060;">$</span>35</td>
+														</tr>
+														<tr>
+															<td style="height: 20px;" colspan="1" height="20"></td>
+														</tr>
+														<tr>
+															<td align="center">
+																<table class="ib" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td bgcolor="#333333" width="150" height="40" align="center"
+																			style="border-radius: 5px;"><a
+																				style="color: #FFFFFF;font-size: 17px;font-weight: bold;" href="#link"><img
+																					width="20" style="display: inline-block;"
+																					src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/92244f92-2827-4731-8faf-dacfe8eb0e78.png"
+																					alt="">&nbsp;Buy Now</a>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+														<tr>
+															<td style="height: 20px;" colspan="1" height="20"></td>
+														</tr>
+														<tr>
+															<td align="center"
+																style="font-size: 16px;font-weight: bold;color: #333333;word-spacing: 5px;">OUR ALL
+																SETUP
+																2019</td>
+														</tr>
+														<tr>
+															<td style="height: 50px;" colspan="1" height="50"></td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td bgcolor="#EEF0F3" align="center" style="font-size: 16px;">
+										<img class="w-100"
+											src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/52583f2a-628d-4a04-8842-846c13b4fedd.png"
+											alt="">
+									</td>
+								</tr>
+							</table>
+							<!-- info all end -->
+
+
+
+						</td>
+						<!-- MAIN CONTAINER 600  END -->
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<!-- MAIN CONTAINER FULL -->
+			<td bgcolor="red" align="center">
+
+				<!-- social -->
+				<table class="social" border="0" cellpadding="0" cellspacing="0" width="100%">
+					<tr>
+						<td bgcolor="#323537" align="center" style="font-size: 0;">
+							<table class="ib" border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									<td width="600" align="center" style="font-size: 0;">
+										<table class="ib" border="0" cellpadding="0" cellspacing="0">
+											<tr>
+												<!-- SUB CONTAINER 560 -->
+												<td height="70" width="560" align="center" style="font-size: 0;">
+													<table class="social__box" border="0" cellpadding="0" cellspacing="0" width="100%">
+														<tr>
+															<td align="center" style="font-size: 0;">
+																<table class="ib" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td height="25" width="230" align="center">
+																			<table class="ib" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td align="center" style="font-size: 16px;font-weight: bold;color: #FFFFFF;">
+																						About&nbsp;&nbsp; |</td>
+																					<td align="center" style="font-size: 16px;font-weight: bold;color: #FFFFFF;">
+																						&nbsp;&nbsp;Feature&nbsp;&nbsp; |</td>
+																					<td align="center" style="font-size: 16px;font-weight: bold;color: crimson;">
+																						&nbsp;&nbsp;Purchase</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+																<!--[if (gte mso 9)|(IE)]>
+																													        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																													        <![endif]-->
+																<table class="ib" border="0" cellpadding="0" cellspacing="0">
+																	<tr>
+																		<td width="330" align="center" style="font-size: 0;">
+																			<table class="ib" border="0" cellpadding="0" cellspacing="0">
+																				<tr>
+																					<td width="35" align="center"><img
+																							src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/a032b6f6-f3f2-4583-85df-db14962daa3f.png"
+																							alt=""></td>
+																					<td width="35" align="center"><img
+																							src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/5b07d8e1-43b0-444c-96fb-f645f8342452.png"
+																							alt=""></td>
+																					<td width="35" align="center"><img
+																							src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/5ffb9ef0-53a2-4fca-a43a-7736a4fead8f.png"
+																							alt=""></td>
+																					<td width="35" align="center"><img
+																							src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/49cd0f39-b32d-4fe5-9b39-720f81a3d73d.png"
+																							alt=""></td>
+																					<td width="35" align="center"><img
+																							src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/04bec4f0-9fd9-429c-b60e-3e3367f13eaa.png"
+																							alt=""></td>
+																					<td width="35" align="center"><img
+																							src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/0a0da76b-ffda-4741-93e9-82523a63dfff.png"
+																							alt=""></td>
+																					<td width="35" align="center"><img
+																							src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/86ec15e7-4ac1-4e93-9f90-3c0dcf14ea56.png"
+																							alt=""></td>
+																					<td width="35" align="center"><img
+																							src="https://gallery.mailchimp.com/1965f03c10c1b89e2074c87af/images/3e9c612f-b3c9-4ace-a30e-0eeb4572190c.png"
+																							alt=""></td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+												<!-- SUB CONTAINER 560 END -->
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<!-- social end -->
+
+				<!-- footer -->
+				<table class="footer" bgcolor="#F06060" border="0" cellpadding="0" cellspacing="0" width="100%">
+					<tr>
+						<td height="70" align="center" style="font-size: 0;">
+							<table class="ib" border="0" cellpadding="0" cellspacing="0">
+								<tr>
+									<td width="560" align="center" style="font-size: 0;">
+										<table class="footer__box" border="0" cellpadding="0" cellspacing="0" width="100%">
+											<tr>
+												<!-- footer container -->
+												<td align="center" style="font-size: 0;">
+													<table class="ib" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td class="footer__copy" width="360"
+																style="font-size: 17px;font-weight: bold;color: #333333;">
+																Copyright &copy; 2019 mustafa mahmud
+															</td>
+														</tr>
+													</table>
+													<!--[if (gte mso 9)|(IE)]>
+														        <td align="center" style="text-align:center;vertical-align:top;font-size:0;">
+																		<![endif]-->
+													<table class="hideMSO hideDesktop" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td style="height: 10px;" colspan="1" height="10px"></td>
+														</tr>
+													</table>
+													<table class="ib" border="0" cellpadding="0" cellspacing="0">
+														<tr>
+															<td class="footer__unsb" width="200"
+																style="font-size: 17px;font-weight: bold;color: #333333;">
+																Unsubscribe
+															</td>
+														</tr>
+													</table>
+													<!-- footer container end -->
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<!-- footer end -->
+
+			</td>
+			<!-- MAIN CONTAINER FULL END -->
+		</tr>
+	</table>
+</body>
+
+</html>

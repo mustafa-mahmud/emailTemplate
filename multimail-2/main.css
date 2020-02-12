@@ -1,0 +1,358 @@
+body {
+  margin: 0;
+  leftmargin: 0;
+  topmargin: 0;
+  padding: 0;
+  background-color: #717C87;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+img,
+a img {
+  border: 0;
+  outline: none;
+  text-decoration: none;
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+table {
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+}
+
+a[href^=tel],
+a[href^=sms] {
+  color: inherit;
+  cursor: default;
+  text-decoration: none;
+}
+
+p,
+a,
+li,
+td,
+body,
+table,
+blockquote {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  max-width: 600px !important;
+  display: block;
+}
+
+.hideMSO {
+  mso-hide: all;
+}
+
+.hideDesktop {
+  display: none;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 400px) {
+  .hideDesktop {
+    display: block;
+    width: auto;
+    height: auto;
+    visibility: visible;
+  }
+}
+
+.hideMobile {
+  display: block;
+  width: auto;
+  height: auto;
+  visibility: visible;
+}
+
+@media only screen and (max-width: 400px) {
+  .hideMobile {
+    display: none;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+}
+
+.c-white {
+  color: #ffffff;
+}
+
+.c-black {
+  color: #000000;
+}
+
+.c-yellow {
+  color: #FF900E;
+}
+
+.c-light {
+  color: #222222;
+}
+
+.c-light-2 {
+  color: #888888;
+}
+
+.b-yellow {
+  background-color: #FF900E;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.rs-ib {
+  display: inline-block;
+}
+
+.ib {
+  display: inline-block;
+}
+
+.t-center {
+  text-align: center !important;
+}
+
+.t-left {
+  text-align: left !important;
+}
+
+.t-justify {
+  text-align: justify !important;
+}
+
+.t-left-rs {
+  text-align: left !important;
+}
+
+@media only screen and (max-width: 400px) {
+  .t-left-rs {
+    text-align: center !important;
+  }
+}
+
+.t-right {
+  text-align: right !important;
+}
+
+.t-right-rs {
+  text-align: right !important;
+}
+
+@media only screen and (max-width: 400px) {
+  .t-right-rs {
+    text-align: center !important;
+  }
+}
+
+.b-r-10 {
+  border-radius: 10px !important;
+}
+
+.b-r-5 {
+  border-radius: 5px !important;
+}
+
+.b-r-3 {
+  border-radius: 3px !important;
+}
+
+.v-a-top {
+  vertical-align: top !important;
+}
+
+.v-a-middle {
+  vertical-align: middle !important;
+}
+
+.v-a-bottom {
+  vertical-align: bottom !important;
+}
+
+.t-cap {
+  text-transform: capitalize;
+}
+
+.t-up {
+  text-transform: uppercase;
+}
+
+.l-h-50 {
+  line-height: 50px;
+}
+
+.l-h-26 {
+  line-height: 26px;
+}
+
+.l-h-1 {
+  line-height: 1;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.f-30 {
+  font-size: 30px;
+}
+
+.f-29 {
+  font-size: 29px;
+}
+
+.f-28 {
+  font-size: 28px;
+}
+
+.f-27 {
+  font-size: 27px;
+}
+
+.f-26 {
+  font-size: 26px;
+}
+
+.f-25 {
+  font-size: 25px;
+}
+
+.f-25 {
+  font-size: 25px;
+}
+
+.f-24 {
+  font-size: 24px;
+}
+
+.f-23 {
+  font-size: 23px;
+}
+
+.f-22 {
+  font-size: 22px;
+}
+
+.f-21 {
+  font-size: 21px;
+}
+
+.f-20 {
+  font-size: 20px;
+}
+
+.f-19 {
+  font-size: 19px;
+}
+
+.f-18 {
+  font-size: 18px;
+}
+
+.f-17 {
+  font-size: 17px;
+}
+
+.f-16 {
+  font-size: 16px;
+}
+
+.f-15 {
+  font-size: 15px;
+}
+
+.f-14 {
+  font-size: 14px;
+}
+
+.f-13 {
+  font-size: 13px;
+}
+
+.f-12 {
+  font-size: 12px;
+}
+
+.f-1 {
+  font-size: 1px;
+}
+
+.f-0 {
+  font-size: 0px;
+}
+
+.btn {
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.btn a {
+  color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 400px) {
+  .rs-ib {
+    display: table !important;
+    width: 100% !important;
+  }
+  .rs-img {
+    display: block !important;
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .rs-w-95 {
+    display: table !important;
+    width: 95% !important;
+  }
+}
+/*# sourceMappingURL=main.css.map */
