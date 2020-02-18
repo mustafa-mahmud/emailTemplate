@@ -4,6 +4,8 @@ body {
   topmargin: 0;
   padding: 0;
   background-color: #ECECEC;
+  background-image: url("img/bg.png");
+  background-repeat: repeat;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
